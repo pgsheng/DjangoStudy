@@ -15,6 +15,8 @@
 ## settings配置文件中INSTALLED_APPS配置新建的APP
 ## DATABASES配置模型层（数据库）: python manage.py migrate 命令生成数据库表
 
+
+
 ## 常见异常：
     1、django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module
        原因1：python3改变连接库，改为pymysql库，Django中，连接数据库时使用的是MySQLdb库
