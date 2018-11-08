@@ -14,6 +14,8 @@
         django-admin startapp hello
 ## settings配置文件中INSTALLED_APPS配置新建的APP
 ## DATABASES配置模型层（数据库）: python manage.py migrate 命令生成数据库表
+    python manage.py makemigrations hello  # 让 Django 知道我们在我们的模型有一些变更
+    python manage.py migrate hello   # 创建表结构
 
 
 
