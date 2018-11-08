@@ -7,11 +7,17 @@
         -- wsgi.py # WSGI兼容的Web服务器的入口，以便运行你的项目。
     -- manage.py # 一个实用的命令行工具，可让你以各种方式与该 Django 项目进行交互
 ## 运行Django项目,启动服务器： 
-    python manage.py runserver 127.0.0.1:8000
+    python manage.py runserver
+    (python manage.py runserver 127.0.0.1:8000)
     通过http://127.0.0.1:8000/来访问正在运行的项目
 ## 创建app，Django项目，app表示更小一个功能单位，如博客管理系统中，对博客的增删查改等功能就应该聚合在一个app中。
         django-admin startapp hello
+## settings配置文件中INSTALLED_APPS配置新建的APP
+## DATABASES配置模型层（数据库）: python manage.py migrate 命令生成数据库表
 
 ## 常见异常：
-    1、UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 176: illegal multibyte sequence
-       原因1：文件打开出现编码错误 ；原因2.  配置文件中 scrapy.cfg 含有中文字符
+    1、django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module
+       原因1：python3改变连接库，改为pymysql库，Django中，连接数据库时使用的是MySQLdb库
+       解决方法：在项目容器下 __init__.py 文件中添加以下代码即可。
+        import pymysql
+        pymysql.install_as_MySQLdb()

@@ -1,5 +1,7 @@
 from django.shortcuts import render
+"""
 
+"""
 
 def hello(request):
     # return HttpResponse("Hello world !!! ") # 直接输出到网页

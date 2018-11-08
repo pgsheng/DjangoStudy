@@ -7,13 +7,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=exh&j_lxnf9475sk7l%@^i)wexu@awk(qob*aq6d$s6a!o256'
 DEBUG = True
 ALLOWED_HOSTS = []  # 配置主机
-INSTALLED_APPS = [
+INSTALLED_APPS = [ # 配置功能模块APP
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello.apps.HelloConfig',  # 新建的模块hello
 ]
 
 MIDDLEWARE = [
@@ -49,11 +50,11 @@ WSGI_APPLICATION = 'DjangoStudy.wsgi.application'
 DATABASES = {  # 数据库配置
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'te',
+        'NAME': 'testdb',
         'USER': 'root',
         'PASSWORD': '123456',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
