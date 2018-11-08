@@ -1,0 +1,10 @@
+2018-11-08 16:27:02,246 - MySQLStudy.py - 72 : {'name': '小米', 'age': 100}
+2018-11-08 16:27:02,249 - MySQLStudy.py - 77 : {'name': '小米', 'age': 100}
+2018-11-08 16:27:32,163 - MySQLStudy.py - 57 : {'id': 12, 'name': '小红', 'age': 101}
+2018-11-08 16:27:32,163 - MySQLStudy.py - 58 : [{'id': 13, 'name': '小马', 'age': 100}, {'id': 32, 'name': '小米', 'age': 100}, {'id': 39, 'name': '小马2', 'age': 100}, {'id': 50, 'name': '小米2', 'age': 100}]
+2018-11-08 16:28:07,020 - MySQLStudy.py - 57 : {'id': 12, 'name': '小红', 'age': 101}
+2018-11-08 16:28:07,020 - MySQLStudy.py - 58 : [{'id': 13, 'name': '小马', 'age': 100}, {'id': 32, 'name': '小米', 'age': 100}, {'id': 39, 'name': '小马2', 'age': 100}, {'id': 50, 'name': '小米2', 'age': 100}]
+2018-11-08 16:52:03,123 - MySQLStudy.py - 57 : {'id': 12, 'name': '小红', 'age': 101}
+2018-11-08 16:52:03,124 - MySQLStudy.py - 58 : [{'id': 13, 'name': '小马', 'age': 100}, {'id': 32, 'name': '小米', 'age': 100}, {'id': 39, 'name': '小马2', 'age': 100}, {'id': 50, 'name': '小米2', 'age': 100}]
+2018-11-08 16:54:03,045 - MySQLStudy.py - 26 : Database version:{'VERSION()': '5.7.24'}
+2018-11-08 16:54:05,634 - MySQLStudy.py - 26 : Database version:{'VERSION()': '5.7.24'}
