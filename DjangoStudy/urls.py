@@ -5,7 +5,7 @@ import url 变成了 import path,如果是路径，则须在路径后加个 /
 """
 from django.urls import path
 
-from hello import views, testdb
+from hello import views, testdb, search
 
 """
 url()可以接收四个参数，两个必选参数：regex、view 和两个可选参数：kwargs、name
@@ -26,4 +26,7 @@ urlpatterns = [
     path('testdb2/', testdb.testdb_select),
     path('testdb3/', testdb.testdb_update),
     path('testdb4/', testdb.testdb_delete),
+    path('search-form/', search.search_form),
+    path('search/', search.search),
+    path('search-post/', search.search_post),
 ]

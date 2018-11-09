@@ -25,3 +25,5 @@
        解决方法：在项目容器下 __init__.py 文件中添加以下代码即可。
         import pymysql
         pymysql.install_as_MySQLdb()
+    2、You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set
+    

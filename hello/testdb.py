@@ -1,4 +1,5 @@
 """
+ 数据库操作
  @Author  : pgsheng
  @Time    : 2018/11/9 10:10
 """
@@ -10,7 +11,6 @@ from hello.models import Test
 log = Log().get_logger()
 
 
-# 数据库操作
 def testdb_insert(request):
     list = ['runoob', 'QQ', 'facebook', 'weixin']
     for name in list:

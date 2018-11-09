@@ -1,7 +1,10 @@
+"""
+ 数据输出页面
+ @Author  : pgsheng
+ @Time    : 2018/11/9 14:50
+"""
 from django.shortcuts import render
-"""
 
-"""
 
 def hello(request):
     # return HttpResponse("Hello world !!! ") # 直接输出到网页
