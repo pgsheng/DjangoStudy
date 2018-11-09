@@ -8,12 +8,12 @@ SECRET_KEY = '=exh&j_lxnf9475sk7l%@^i)wexu@awk(qob*aq6d$s6a!o256'
 DEBUG = True
 ALLOWED_HOSTS = []  # 配置主机
 INSTALLED_APPS = [ # 配置功能模块APP
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin',  # 管理工具。
+    'django.contrib.auth',  # 管理工具。
+    'django.contrib.contenttypes',  # 管理工具。
+    'django.contrib.sessions',  # 管理工具。
+    'django.contrib.messages',  # 管理工具。
+    'django.contrib.staticfiles',  # 管理工具。
     'hello.apps.HelloConfig',  # 新建的模块hello
 ]
 

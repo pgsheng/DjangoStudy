@@ -17,7 +17,7 @@
     python manage.py makemigrations hello  # 让 Django 知道我们在我们的模型有一些变更
     python manage.py migrate hello   # 创建表结构
 
-
+## 管理工具admin，命令：python manage.py createsuperuser 创建超级用户，admin 1----8
 
 ## 常见异常：
     1、django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module
