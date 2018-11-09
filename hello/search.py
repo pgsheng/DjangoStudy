@@ -27,4 +27,6 @@ def search_post(request):
     ctx = {}
     if request.POST:
         ctx['rlt'] = request.POST['q']
+    print("请求是否安全：%s" % request.is_secure())
+    print("请求路径：%s" % request.get_full_path())
     return render(request, "post.html", ctx)

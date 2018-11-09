@@ -19,7 +19,7 @@ name: 用来反向获取 URL。
 #     url(r'^hello$', view.hello),  # http://127.0.0.1:8000/hello
 # ]
 urlpatterns = [
-    path('', views.hello),
+    path('', views.hello),  # 调用方法不带括号
     path('hello/', views.hello),
     path('hello2/', views.hello2),
     path('testdb/', testdb.testdb_insert),

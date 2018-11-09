@@ -21,9 +21,9 @@
 
 ## 常见异常：
     1、django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module
-       原因1：python3改变连接库，改为pymysql库，Django中，连接数据库时使用的是MySQLdb库
-       解决方法：在项目容器下 __init__.py 文件中添加以下代码即可。
-        import pymysql
-        pymysql.install_as_MySQLdb()
+        原因：python3改变连接库，改为pymysql库，Django中，连接数据库时使用的是MySQLdb库
+        解决方法：在项目容器下 __init__.py 文件中添加以下代码即可。
+            import pymysql
+            pymysql.install_as_MySQLdb()
     2、You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set
-    
+        原因：post方式的urls.py路径配置和html的表单提交路径配置要一致（结尾都要‘/’或都不要）
