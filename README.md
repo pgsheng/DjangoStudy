@@ -8,7 +8,7 @@
     -- manage.py # 一个实用的命令行工具，可让你以各种方式与该 Django 项目进行交互
 ## 运行Django项目,启动服务器： 
     python manage.py runserver
-    (python manage.py runserver 127.0.0.1:8000)
+    (python manage.py runserver 127.0.0.1:8000) 指定一个 IP 地址
     通过http://127.0.0.1:8000/来访问正在运行的项目
 ## 创建app，Django项目，app表示更小一个功能单位，如博客管理系统中，对博客的增删查改等功能就应该聚合在一个app中。
         django-admin startapp hello
