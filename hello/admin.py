@@ -13,6 +13,7 @@ from hello.models import Test, Contact, Tag
 class TagInline(admin.TabularInline):  # 配置内联显示，两个表有外键关联，配置后可在同编辑页面上显示
     model = Tag
 
+
 # 自定义管理页面，来取代默认的页面。比如上面的 "add" 页面。我们想只显示 name 和 email 部分
 class ContactAdmin(admin.ModelAdmin):
     # fields = ('name', 'email')  # 定义了要显示的字段
@@ -31,6 +32,7 @@ class ContactAdmin(admin.ModelAdmin):
             'fields': ('age',),
         }]
     )
+
 
 admin.site.register(Contact, ContactAdmin)
 admin.site.register([Test, Tag])
