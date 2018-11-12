@@ -9,7 +9,7 @@ from django.urls import path
 from hello import views, testdb, search
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # 管理工具页面
+    path('admin/', admin.site.urls),  # 管理工具页面，放开激活
     path('', views.hello),  # 调用方法不带括号
     path('hello/', views.hello),
     path('hello2/', views.hello2),

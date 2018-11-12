@@ -19,7 +19,10 @@
     python manage.py makemigrations hello  # 让 Django 知道我们在我们的模型有一些变更
     python manage.py migrate hello   # 创建表结构
 
-## 管理工具admin，命令：python manage.py createsuperuser 创建超级用户，admin 1----8
+## 管理工具admin，命令：python manage.py createsuperuser 创建超级用户：admin ，1----8
+    urls.py文件配置：path('admin/', admin.site.urls) ，激活管理工具
+    http://127.0.0.1:8000/admin/ 访问 
+    让admin界面管理某个数据模型，需先注册到 admin，修改admin.py：admin.site.register(Test)
 
 ## 常见异常：
     1、django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module
